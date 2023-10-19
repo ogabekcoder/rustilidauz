@@ -44,7 +44,7 @@ const scene = new Scenes.WizardScene(
                 return;
             }
 
-            await ctx.reply("Siz Komiljon Xamidjonovning \"Python, Backend — Dasturlash\" onlayn kursiga ro'yxatdan o'tdingiz. Dasturlashni yuqori saviyada onlayn o'rganish va bu bilimlarni amaliyotda ishlatib pul topish uchun siz yana bir qadam tashlab onlayn kursimiz uchun to'lov qilishingiz kerak bo'ladi 🚀");
+            await ctx.reply("Siz Zarina Ismoilovaning \"Rus tili 90 kunda noldan muloqotgacha\" onlayn kursiga ro'yxatdan o'tdingiz. Rus tilini yuqori saviyada onlayn o'rganish va bu bilimlarni amaliyotda ishlatishingiz uchun siz yana bir qadam tashlab onlayn kursimiz uchun to'lov qilishingiz kerak bo'ladi 🚀");
 
             await User.create({
                 userId: ctx.message.from.id,
@@ -54,7 +54,7 @@ const scene = new Scenes.WizardScene(
 
             ctx.wizard.state.user.phone = ctx.message.text;
 
-            await ctx.replyWithPhoto({source: path.join(__dirname, "../../img.png"), }, { caption: "\"Python, Backend — Dasturlash\" onlayn kursining ta'riflari bilan tanishing" });
+            await ctx.replyWithPhoto({source: path.join(__dirname, "../../img.jpg"), }, { caption: "\"Rus tili 90 kunda noldan muloqotgacha\" onlayn kursining ta'riflari bilan tanishing" });
 
             await ctx.reply(`${ctx.wizard.state.user.full_name} endi to'lov qismiga o'tamiz.
 
@@ -68,11 +68,10 @@ Xalqaro karta raqamimiz: 
 
 To'lovni amalga oshirish tartibi:
 1️⃣ To'lovni Click, Payme, Apelsin, Zumrad kabi ilovalar orqali (kartadan-kartaga) yoki Paynet shaxobchalari orqali to'lovni amalga oshirasiz va joyingiz band bo'ladi✅
-2️⃣ To'lov qilgandan so'ng screnshoot qilib mana shu telegram botga yuborasiz✅
-3️⃣ (Screnshotda summa, sana va to'lov amalga oshgan vaqti bo'lishi shart) Darsliklarni qabul qilib oluvchi o'quvchining ism, familyasi bog'lanish uchun qo'shimcha raqam yozib jo'natasiz✅
-4️⃣ To’lovingizni 24 soat ichida ko’rib chiqib, siz bilan bog’lanamiz.
+2️⃣ To'lov qilgandan so'ng screnshoot qilib mana shu telegram botga yuborasiz (Screnshotda summa, sana va to'lov amalga oshgan vaqti bo'lishi shart) ✅
+3️⃣ To’lovingizni 24 soat ichida ko’rib chiqib, siz bilan bog’lanamiz.
 
-Agar sizda qo'shimcha savollar bo'lsa bizga albatta bog'laning: 990882745`)
+Agar sizda qo'shimcha savollar bo'lsa bizga albatta bog'laning: 993421009`)
             ctx.wizard.next();
         } catch (e) {
             console.log(e + "");

@@ -17,7 +17,10 @@ bot.use(session());
 
 bot.use(stage.middleware());
 
-bot.start((ctx) => ctx.chat.type === "private" && ctx.scene.enter("register"));
+bot.start((ctx) => {
+  console.log(ctx.message)
+  ctx.chat.type === "private" && ctx.scene.enter("register")
+});
 
 bot.command("excel", async (ctx) => {
   try {
@@ -52,6 +55,6 @@ bot.command("excel", async (ctx) => {
     console.log(e + "");
     await ctx.telegram.sendMessage(config.DEV_ID, e.toString());
   }
-});
+});  
 
 startBot(bot);
